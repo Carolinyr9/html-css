@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    min-width: 500px;
+    height: 150px;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    padding: 30px 30px 10px 30px;
+    font-family: Passion One, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 > a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 > a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+pre {
+    font-family: Sriracha;
+}
+
+article {
+    padding-left: 17px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
