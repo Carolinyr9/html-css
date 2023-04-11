@@ -13,7 +13,7 @@ header {
     background-color: black;
     color: white;
     min-width: 500px;
-    height: 150px;
+    height: 190px;
 }
 
 h1 {
@@ -21,16 +21,20 @@ h1 {
     margin: auto;
     padding: 30px 30px 10px 30px;
     font-family: Passion One, sans-serif;
+    font-size: 10vw;
 }
 
 h2 {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    font-weight: normal;
 }
 
 h2 > a {
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 h2 > a:hover {
@@ -38,14 +42,29 @@ h2 > a:hover {
     color: yellow;
 }
 
-pre {
+section {
     font-family: Sriracha;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
 }
 
-article {
-    padding-left: 17px;
+.normal {
+    background-color: white;
 }
 
+.imagem > p {
+    display: inline-block;
+    padding: 5px;
+     background-color: gray;
+}
+
+.imagem {
+    background-color: black;
+    color: white;
+}
 
 footer {
     background-color: black;
