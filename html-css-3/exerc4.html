@@ -19,6 +19,29 @@
             width: 500px;
             margin: auto;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            background-color: #605f5f;
+            padding: 2px;
+            border: 1px solid black;
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            color: grey;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -0;
+            background-color: #808080;
         }
 
         td, th {
@@ -42,10 +65,11 @@
     <h1>Trabalhando com tabelas grandes</h1>
      
     <table>
+        <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th style="width: 150px;" scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -164,7 +188,8 @@
             <th class="numero">214.3 milhões</td>
         </tfoot>
     </table>
-
+    
+    
 
 </body>
 </html>
