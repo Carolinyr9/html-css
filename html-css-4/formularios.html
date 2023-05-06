@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulários</title>
+</head>
+<body>
+    <h1>Fórmulário da Escola</h1>
+    
+    <form action="" method="get">
+
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" maxlength="30" size="60" required autocomplete="name"> <br>
+
+            <label for="isex">Gênero</label>
+            <input type="radio" name="sex" id="ifem" value="Fem"> <label for="ifem">Feminimo</label>
+            <input type="radio" name="sex" id="imas" value="Mas"> <label for="imas">Masculino</label> <br>
+            
+            <label for="iescola">Escola:</label>
+            <input type="text" name="escola" id="iescola" maxlength="60" size="60" required> <br>
+
+            <label for="inasc">Nascimento:</label>
+            <input type="date" name="nasc" id="inasc" required autocomplete="bday-day"> <br>
+
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail"> <br>
+
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" placeholder="(XX) XXXX XXXX"> <br>
+
+            <label for="in1">Média Português:</label>
+            <input type="number" name="n1" id="in1" step="0.1" maxlength="4" size="4" min="0" max="10" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"> <br>
+
+            <label for="in2">Média Matemática:</label>
+            <input type="number" name="n2" id="in2" step="0.1" maxlength="4" size="4" min="0" max="10" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"> <br>
+
+            <output name="soma" id="isoma">0</output>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha de Curso</legend>
+
+            Cursos Disponíveis <select name="cursos" id="icursos">
+                <option value="" selected>Escolha</option>
+                <optgroup value="Línguas" label="Línguas">
+                    <option value="">Inglês</option>
+                    <option value="">Francês</option>
+                    <option value="">Japonês</option>
+                    <option value="">Espanhol</option>
+                    <option value="">Russo</option>
+                </optgroup>
+
+                <optgroup label="Esportes">
+                    <option value="">Hadebol</option>
+                    <option value="">Futebol</option>
+                    <option value="">Basquete</option>
+                    <option value="">Volei</option>
+                    <option value="">Basebol</option>
+                </optgroup>
+
+                <optgroup label="Artes">
+                    <option value="">Pintura</option>
+                    <option value="">Desenho</option>
+                    <option value="">Canto</option>
+                    <option value="">Balé</option>
+                    <option value="">Música</option>
+                </optgroup>
+            </select> 
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
