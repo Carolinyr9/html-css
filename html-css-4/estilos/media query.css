@@ -6,8 +6,7 @@
 
 }
 
-@media screen (min-width: 768px) and (max-width: 992px) { 
-    
+@media (min-width: 768px) and (max-width: 992px) { 
     img#phone {display: none;}
 
     img#tablet {display: block;}
@@ -17,13 +16,28 @@
     img#desktop {display: none;}
 
     img#tv {display: none;}
-    
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { 
-
+@media (min-width: 992px) and (max-width: 1200px) { 
+        img#phone {display: none;}
+    
+        img#tablet {display: none;}
+    
+        img#impressora {display: none;}
+    
+        img#desktop {display: block;}
+    
+        img#tv {display: none;}   
 }
 
 @media screen and (min-width: 1200px) {
-
+        img#phone {display: none;}
+    
+        img#tablet {display: none;}
+    
+        img#impressora {display: none;}
+    
+        img#desktop {display: none;}
+    
+        img#tv {display: block;}  
 }
