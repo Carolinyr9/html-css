@@ -89,6 +89,14 @@ main .cartao-pokemon .informacoes {
     padding: 2px;
 }
 
+.modo-escuro main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 2px;
+}
+
 main .cartao-pokemon .informacoes span {
     padding: 5px;
     text-transform: uppercase;
