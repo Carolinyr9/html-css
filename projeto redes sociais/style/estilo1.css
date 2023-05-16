@@ -6,6 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.cabeça{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 body {
     text-align: center;
     align-items: center;
@@ -31,9 +39,13 @@ body {
 
 #foto {
     border-radius: 50%;
-    width: 300px;
+    width: 40vw;
     padding: 10px;
     
+}
+
+.decor {
+    width: 70px;
 }
 
 main {
@@ -46,6 +58,7 @@ main {
 
 .conteudo {
     width: 70%;
+    height: 300px;
     padding: 10px 5px;
     background-color: #FFCDB2;
     border-radius: 15px;
@@ -67,6 +80,41 @@ main {
 .nick:hover {
     text-decoration: underline;
     color: #6D6875;
+}
+
+.imgs {
+    width: 20%;
+
+}
+
+section {
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.texto {
+    color: #303030;
+    padding: 8px;
+    
+}
+
+footer {
+    background-color: #6D6875;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    text-decoration: underline;
 }
 
 
