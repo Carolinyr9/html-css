@@ -1,4 +1,4 @@
-body {
+body { /*Altera as funções, respectivamente, no body de: fonte padrão, largura máxima, margens, cor de fundo e cor do texto*/
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     margin: 0 auto;
@@ -7,24 +7,24 @@ body {
 }
 
 
-body.modo-escuro {
+body.modo-escuro { /*Altera as funções no body modo escuro de: cor do texto e cor de fundo*/
     background-color: #212121;
     color: #f5f5f5;
 }
 
-header {
+header { /*Altera as funções, respectivamente, no header de: posicionamento do conteúdo e espaço de preenchimento*/
     display: flex;
     justify-content: space-between;
     padding: 25px;
 }
 
 header .logo, 
-header .imagem-botao {
+header .imagem-botao { /*Altera as funções, respectivamente, no class .logo e class .imagem-botao de: largura e transição*/
     width: 30px;
     transition: 0.2s ease-in-out;
 }
 
-header .logo:hover, .imagem-botao:hover, main .cartao-pokemon:hover{
+header .logo:hover, .imagem-botao:hover, main .cartao-pokemon:hover{ /*Altera as funções, respectivamente, nas class logo, imagem-botao e cartao-pokemon para que quando o mouse estiver sobre elas: elas fiquem maiores e o cursor mude */
     transform: scale(1.05);
     cursor: pointer;
 
@@ -77,7 +77,7 @@ main .cartao-pokemon {
 }
 
 
-.modo-escuro .cartao-pokemon {
+.modo-escuro .cartao-pokemon { /*Altera as funções da class cartão pokemon no modo escuro*/
     background-color: #a8a8a8;
 }
 
@@ -89,7 +89,7 @@ main .cartao-pokemon .informacoes {
     padding: 2px;
 }
 
-.modo-escuro main .cartao-pokemon .informacoes {
+.modo-escuro main .cartao-pokemon .informacoes { 
     display: flex;
     justify-content: space-between;
     border: 1px solid #ffffff;
@@ -97,55 +97,55 @@ main .cartao-pokemon .informacoes {
     padding: 2px;
 }
 
-main .cartao-pokemon .informacoes span {
+main .cartao-pokemon .informacoes span { 
     padding: 5px;
     text-transform: uppercase;
     font-size: 17px;
 }
 
-main .cartao-pokemon .gif {
+main .cartao-pokemon .gif { /*Altera as funções, respectivamente, na class gif: largura e altura*/
     width: 90px;
     height: 90px;
 
 }
 
-main .cartao-pokemon .tipo {
+main .cartao-pokemon .tipo { /*Altera as funções, respectivamente, na class tipo de: disposição*/
     display: inline-flex;
     gap: 15px;
 }
 
-main .cartao-pokemon .tipo {
+main .cartao-pokemon .tipo { /*Altera as funções, respectivamente, no main, na class cartao-pokemon e tipo de: espaçamento e borda arredondada*/
     padding: 8px;
     border-radius: 10px
 }
 
-.grama {
+.grama { /*Altera as funções, respectivamente, na class grama de: cor de fundo*/
     background-color: #7ac74c;
 }
 
-.veneno {
+.veneno { /*Altera as funções, respectivamente, na class veneno de: cor de fundo*/
     background-color: #df68ddfb;
 }
 
-.fogo {
+.fogo { /*Altera as funções, respectivamente, na class fogo de: cor de fundo*/
     background-color: #ee8130;
 }
 
-.agua {
+.agua { /*Altera as funções, respectivamente, na class agua de: cor de fundo*/
     background-color: #6390f0;
 }
 
-.inseto {
+.inseto { /*Altera as funções, respectivamente, na class inseto de: cor de fundo*/
     background-color: #a6b91a;
 }
 
 
-ul {
+ul { /*Altera as funções, respectivamente, no ul de: espaçamento*/
     padding: 10px;
 
 }
 
-main .descricao {
+main .descricao { /*Altera as funções, respectivamente, no main na class descrição de: altura máxima,tipo de rollagem, fonte padrãp, tamanho da fonte, espaçamento direito */
     max-height: 80px;
     overflow-y: scroll;
     font-size: 14px;

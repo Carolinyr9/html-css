@@ -28,6 +28,8 @@ botaoAlterarTema.addEventListener("click", () => {
 
     body.classList.toggle("modo-escuro");
 
+   /* - objetivo 2 */
+
     if (modoEscuroEstaAtivo) {
       imagemBotaoTrocaDeTema.setAttribute("src", "./src/imagens/sun.png");
     } else {

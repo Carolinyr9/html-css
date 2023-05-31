@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 300px;
+    background: url(../imagens/header_.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #141414;
+    font-weight: bold;
+}
+
+header > h1 {
+    color:#141414;
+    text-align: center;
+    padding: 25px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414;
+    color: whitesmoke;
+}
+
+main {
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+.info {
+    background-color: #292929;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    height: 220px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.reco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.reco > div.filmes > img {
+    width: 250px;
+    padding: 10px 0px;
+    
+}
+
+div.filmes {
+    background-color: #292929;
+    padding: 10px;
+    margin: 10px;
+    width: 260px;
+    height: 600px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.genero {
+    padding: 20px;
+}
+
+footer > section > a > img {
+    width: 50px;
+    filter: invert(16%);
+    display: flex;
+    padding: 20px 0px 20px 70px;
+
+}
+
+footer > section > a > img:hover, footer > section > p:hover { 
+    filter: invert(100%);
+}
+
+footer {
+    text-align: center;
+    height: 300px;
+    background: url(../imagens/footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+
+}
+
+footer > section {
+    padding: 160px 0px 0px 0px;
+display: flex;
+
+}
+
+footer > section > p {
+    display: flex;
+    font-weight: 300;
+    padding: 20px 0px 20px 90px;
+    float: right;
+    color:#292929;
+}
