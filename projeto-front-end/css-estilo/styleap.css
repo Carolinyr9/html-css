@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #AC070F;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+    
+nav {
+    font-family: 'Poppins';
+      position: absolute;
+      bottom: 0;
+      height: 60px;
+      line-height: 60px;
+      width: 100%;
+      background-color: rgba(0,0,0,.1);
+}
+
+nav > a{
+        color: #fff;
+        display: inline-block;
+        padding: 10px 15px;
+        line-height: 1;
+        text-decoration: none;
+
+}
+
+.titulo {
+    padding: 35px;
+    text-align: center;
+    margin: auto;
+    color: #ffff;
+    font-size: 3em;
+    line-height: 10px;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #141414;
+    color: whitesmoke;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-style: normal;
+}
+
+main {
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 250px;
+}
+
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    padding: 25px;
+    margin: auto auto 100px auto;
+    max-width: 400px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+.info > img{
+    width: 100px;
+    background: white;
+    border-radius: 50%;
+    
+}
+
+img.play, img.inte {
+    filter: invert(100%);
+}
+
+footer{
+    background-color: #AC070F;
+    padding: 50px 0;
+    font-family: 'Poppins';
+
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    text-align: left;
+}
+.footer-col h4{
+    font-size: 22px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+    flex-wrap: nowrap;
+    display: block;
+    line-height: 10px;
+}
+.footer-col ul li{
+    margin: 10px 0;
+    flex-wrap: nowrap;
+    display: block;
+}
+.footer-col ul li a{
+    line-height: 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #AC070F;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 377px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #AC070F;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 400px;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #AC070F;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+.img-f{
+    width: 20px;
+    filter: invert(100%);
+}
+
+
+
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+@media (min-width: 748px) {
+    
+    .back {
+        background-image: linear-gradient(to bottom, black, #141414);
+        height: 330px;
+
+    }
+
+    .titulo {
+        padding: 30px;
+        margin: auto;
+        font-size: 4em;
+
+    }
+
+
+
+
+}

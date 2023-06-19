@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  
+</head>
+<body>
+ 
+  <main>
+    <form action="" method="get">
+      <div class="form">
+        <div class="inputdia">
+          <label for="day">Day</label> <br>
+          <input type="number" id="day" name="day" maxlength="2" required placeholder="DD">
+        </div>
+        <div class="inputmes">
+          <label for="month">Month</label> <br>
+          <input type="number" id="month" name="month" maxlength="2" required placeholder="MM">
+        </div>
+        <div class="inputano">
+          <label for="year">Year</label> <br>
+          <input type="number" id="year" name="year" maxlength="4" required placeholder="YYYY">
+        </div> 
+        <div id="horizontal-line">
+          <hr />
+          <div id="svg-arrow" onclick="ageCalculate() ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="44"
+              viewBox="0 0 46 44"
+            >
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path
+                  d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+    </form>
+
+    </div>
+
+
+    <div id="res">
+      <div id="ouryear" class="our">-- </div>years <br>
+      <div id="ourmonth" class="our">-- </div>months <br>
+      <div id="ourday" class="our">-- </div>days <br>
+    </div>
+  </main>
+  
+  <footer>
+    
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Carolinyr9">Linyy</a>.
+  </footer>
+
+  <script src="script/javas.js"></script>
+</body>
+</html>

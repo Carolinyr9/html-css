@@ -23,7 +23,7 @@ const imagemBotaoTrocaDeTema = document.querySelector(".imagem-botao")
 
 botaoAlterarTema.addEventListener("click", () => {
 
-    const modoEscuroEstaAtivo = body.classList.contains("modo-escuro")
+  const modoEscuroEstaAtivo = body.classList.contains("modo-escuro")
 
 
     body.classList.toggle("modo-escuro");

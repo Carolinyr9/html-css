@@ -1,51 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
 }
 
-header {
-    height: 300px;
-    background: url(../imagens/header_.png);
-    background-position: center;
-    background-size: cover;
-    
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-li {
-    list-style-type: none;
-    margin: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #141414;
-    font-weight: bold;
-}
-
-header > h1 {
-    color:#141414;
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #AC070F;
     text-align: center;
-    padding: 25px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+
+}
+    
+h1{
+      font-size: 42px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 100;
+}
+    
+nav {
+    font-family: 'Poppins';
+      position: absolute;
+      bottom: 0;
+      height: 60px;
+      line-height: 60px;
+      width: 100%;
+      background-color: rgba(0,0,0,.1);
+}
+
+nav > a{
+        color: #fff;
+        display: inline-block;
+        padding: 10px 15px;
+        line-height: 1;
+        text-decoration: none;
+
+}
+
+
+.titulo {
+    padding: 35px;
+    text-align: center;
+    margin: auto;
+    color: #ffff;
+    font-size: 2.25em;
+    line-height: 10px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #141414;
     color: whitesmoke;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-style: normal;
 }
 
 main {
     text-align: center;
     align-items: center;
     justify-content: space-around;
+    margin-top: 250px;
 
+}
+
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: italic;
 }
 
 .container {
@@ -57,12 +100,13 @@ main {
 
 .info {
     background-color: #292929;
-    padding: 20px;
-    margin: auto;
-    width: 300px;
-    height: 220px;
+    padding: 25px;
+    margin: auto auto 30px auto;
+    width: 250px;
+    height: 360px;
     text-align: center;
     border-radius: 10px;
+    justify-content: space-around;
 }
 
 .reco {
@@ -70,20 +114,22 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 .reco > div.filmes > img {
     width: 250px;
     padding: 10px 0px;
+
     
 }
 
 div.filmes {
     background-color: #292929;
     padding: 10px;
-    margin: 10px;
+    margin: 20px 20px 30px 20px;
     width: 260px;
-    height: 600px;
+    height: 400px;
     text-align: center;
     border-radius: 10px;
 }
@@ -92,39 +138,281 @@ div.filmes {
     padding: 20px;
 }
 
-footer > section > a > img {
-    width: 50px;
-    filter: invert(16%);
+.filmes-info {
+    max-height: 170px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.ani {
+    padding: 20px;
+    margin: auto;
     display: flex;
-    padding: 20px 0px 20px 70px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
-footer > section > a > img:hover, footer > section > p:hover { 
+.titulo-ani {
+    margin: 20px;
+}
+
+.ani {
+    margin: 30px;
+}
+
+.anif {
+    padding: 30px;
+    color: white;
+    width: 340px;
+    height: 200px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: filmes-video;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+@keyframes filmes-video {
+    0%  {  background-image: url(../imagens/netflix-gif-ani.gif);   }
+    25%  {  background-image: url(../imagens/alerta-vermelho-gif-ani.gif);    }
+    50%  {  background-image: url(../imagens/the-good-gif-ani.gif);    }    
+    75% {   background-image: url(../imagens/hilda-gif-ani.gif);   }
+    100%  {  background-image: url(../imagens/netflix-gif-ani.gif);    }
+
+}
+
+
+.anif2 {
+    padding: 30px;
+    color: white;
+    width: 340px;
+    height: 200px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: filmes-video2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+@keyframes filmes-video2 {
+    0%  {  background-image: url(../imagens/disney+gif.gif);   }
+    25%  {  background-image: url(../imagens/gif-cruella-ani.webp);    }
+    50%  {  background-image: url(../imagens/gif-wandavision-ani.gif);    }    
+    75% {   background-image: url(../imagens/gif-gravity-falls-ani.gif);   }
+    100%  {  background-image: url(../imagens/disney+gif.gif);    }
+
+}
+
+.anif3 {
+    padding: 30px;
+    color: white;
+    width: 340px;
+    height: 200px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: filmes-video3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+@keyframes filmes-video3 {
+    0%  {  background-image: url(../imagens/star+.gif);   }
+    25%  {  background-image: url(../imagens/deadpool-gif-ani.gif);    }
+    50%  {  background-image: url(../imagens/the-bear-ani.gif);    }    
+    75% {   background-image: url(../imagens/simpsons-ani.gif);   }
+    100%  {  background-image: url(../imagens/star+.gif);    }
+
+}
+
+.anif4 {
+    padding: 30px;
+    color: white;
+    width: 340px;
+    height: 200px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: filmes-video4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+@keyframes filmes-video4 {
+    0%  {  background-image: url(../imagens/hbomax.gif);   }
+    25%  {  background-image: url(../imagens/ate-o-ultimo-ani.gif);    }
+    50%  {  background-image: url(../imagens/the-last-of-us-ani.gif);    }    
+    75% {   background-image: url(../imagens/rick-and-morty-ani.gif);   }
+    100%  {  background-image: url(../imagens/hbomax.gif);    }
+
+}
+
+footer{
+    background-color: #AC070F;
+    padding: 50px 0;
+    font-family: 'Poppins';
+
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    text-align: left;
+}
+.footer-col h4{
+    font-size: 22px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+    flex-wrap: nowrap;
+    display: block;
+    line-height: 10px;
+}
+.footer-col ul li{
+    margin: 10px 0;
+    flex-wrap: nowrap;
+    display: block;
+}
+.footer-col ul li a{
+    line-height: 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #AC070F;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 377px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #AC070F;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 400px;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #AC070F;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+.img-f{
+    width: 20px;
     filter: invert(100%);
 }
 
-footer {
-    text-align: center;
-    height: 300px;
-    background: url(../imagens/footer.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0px;
 
+
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
 }
 
-footer > section {
-    padding: 160px 0px 0px 0px;
-display: flex;
+@media (min-width: 748px) {
+    
+    .back {
+        background-image: linear-gradient(to bottom, black, #141414);
+        height: 330px;
 
-}
+    }
 
-footer > section > p {
-    display: flex;
-    font-weight: 300;
-    padding: 20px 0px 20px 90px;
-    float: right;
-    color:#292929;
+    .titulo {
+        padding: 30px;
+        line-height: 10px;
+        margin: auto;
+        font-size: 3em;
+    }
+
+    .info {
+        width: 500px;
+        height: 220px;
+    }
+
+    .ani {
+        display: block;
+    }
+
+    .anif, .anif2, .anif3, .anif4{
+        width: 480px;
+        height: 270px;
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+
+
+
 }
