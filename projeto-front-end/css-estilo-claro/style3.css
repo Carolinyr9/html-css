@@ -84,7 +84,7 @@ nav > a{
 }
 
 body {
-    background-color: #141414;
+    background-color: #CACCD1;
     color: whitesmoke;
     transition: background 0.2s linear;
 
@@ -102,6 +102,7 @@ main {
 }
 
 h1 {
+    color: #636066;
     font-family: 'Poppins';
     font-weight: 500;
     font-style: italic;
@@ -118,7 +119,7 @@ form.principal {
     overflow: hidden;
     font-family: 'Poppins';
     margin: 20px 0;
-    background-color: #292929;
+    background-color: #99969B;
     padding: 30px 25px;
     border-radius: 5px;
     margin-bottom: 50px;
@@ -144,7 +145,7 @@ form .input-block label {
     padding: 7px;
     font-size: 16px;
     color: white;
-    background-color: #292929;
+    background-color: #99969B;
     border-radius: 2px;
     border: 1px solid whitesmoke;
     outline-color: #9A060D;
@@ -155,7 +156,7 @@ form .input-block label {
     display: block;
     min-width: 120px;
     border: none;
-    background-color: #9A060D;
+    background-color: #636066;
     color: whitesmoke;
     border-radius: 25px;
     margin: auto;
@@ -364,7 +365,6 @@ footer {
         font-size: 2rem;
     }
 
-
 }
 
 @media (max-width: 800px) {
@@ -394,8 +394,4 @@ footer {
 
     }
 
-    
-    form.principal {
-        width: 250px;
-    }
 }

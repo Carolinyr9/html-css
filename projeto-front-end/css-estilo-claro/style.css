@@ -76,7 +76,7 @@ nav > a{
 }
 
 body {
-    background-color: #141414;
+    background-color: #CACCD1;
     color: whitesmoke;
     transition: background 0.2s linear;
 
@@ -102,6 +102,7 @@ h1 {
     font-family: 'Poppins';
     font-weight: 500;
     font-style: italic;
+    color: #88868a;
 }
 
 h2 {
@@ -118,7 +119,7 @@ h2 {
 }
 
 .info {
-    background-color: #292929;
+    background-color: #99969B;
     padding: 25px;
     margin: auto auto 30px auto;
     width: 250px;
@@ -144,7 +145,7 @@ h2 {
 }
 
 div.filmes {
-    background-color: #292929;
+    background-color: #99969B;
     padding: 10px;
     margin: 20px 20px 30px 20px;
     width: 260px;
@@ -356,7 +357,6 @@ footer{
     color: #AC070F;
     background-color: white;
 }
-
 .footer-col .form-sub input{
     width: 377px;
     padding: 10px;
@@ -366,11 +366,9 @@ footer{
     color: white;
     background-color: #AC070F;
 }
-
 .footer-col .form-sub input::placeholder{
     color: white;
 }
-
 .footer-col .form-sub button{
     width: 400px;
     margin-top: 10px;
@@ -389,7 +387,6 @@ footer{
     width: 20px;
     filter: invert(100%);
 }
-
 
 @media (max-width: 500px) {
     .footer-col .form-sub button{
@@ -414,6 +411,8 @@ footer{
     }
 
 }
+
+
 
 @media (max-width: 800px) {
     .footer-col{
