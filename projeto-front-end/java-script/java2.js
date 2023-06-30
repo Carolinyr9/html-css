@@ -4,11 +4,14 @@ const imagemBotaoTrocaDeTema = document.querySelector(".imagem-botao")
 
 botaoAlterarTema.addEventListener("click", () => {
 
-    const modoClaroEstaAtivo = document.querySelector("link[href='css-estilo/styleap.css']").href = "css-estilo-claro/style2.css";
-
-    if (modoClaroEstaAtivo) {
+    if (imagemBotaoTrocaDeTema.src.endsWith("imagens/lua.png")) {
+      const modoClaroEstaAtivo = document.querySelector("link[href='css-estilo/styleap.css']")
+      modoClaroEstaAtivo.href = "css-estilo-claro/style2.css";
       imagemBotaoTrocaDeTema.setAttribute("src", "./imagens/sol.png");
-    } else {
-      imagemBotaoTrocaDeTema.setAttribute("src", "./imagens/lua.png");
+    }
+    else {
+      const modoClaroEstaAtivo = document.querySelector("link[href='css-estilo-claro/style2.css']")
+      modoClaroEstaAtivo.href = "css-estilo/styleap.css";
+      imagemBotaoTrocaDeTema.setAttribute("src", "./imagens/lua.png")
     }
   });

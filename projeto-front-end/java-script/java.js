@@ -30,15 +30,16 @@ const botaoAlterarTema = document.getElementById("botao-alterar-tema")
 
 const imagemBotaoTrocaDeTema = document.querySelector(".imagem-botao")
 
-const css = document.querySelector("link[href='css-estilo/styleex.css']")
-
 botaoAlterarTema.addEventListener("click", () => {
 
-  const modoClaroEstaAtivo = document.querySelector("link[href='css-estilo/styleex.css']").href = "css-estilo-claro/style3.css";
-
-    if (modoClaroEstaAtivo) {
+    if (imagemBotaoTrocaDeTema.src.endsWith("imagens/lua.png")) {
+      const modoClaroEstaAtivo = document.querySelector("link[href='css-estilo/styleex.css']")
+      modoClaroEstaAtivo.href = "css-estilo-claro/style3.css";
       imagemBotaoTrocaDeTema.setAttribute("src", "./imagens/sol.png");
-    } else {
-    imagemBotaoTrocaDeTema.setAttribute("src", "./imagens/lua.png");
-  }
+    }
+    else {
+      const modoClaroEstaAtivo = document.querySelector("link[href='css-estilo-claro/style3.css']")
+      modoClaroEstaAtivo.href = "css-estilo/styleex.css";
+      imagemBotaoTrocaDeTema.setAttribute("src", "./imagens/lua.png")
+    }
 });
