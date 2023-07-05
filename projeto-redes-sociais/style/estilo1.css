@@ -3,10 +3,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.cabeça{
+header {
+    background-color: #AAAAAA;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto {
     align-items: center;
     margin: auto;
     display: flex;
@@ -14,116 +19,33 @@
     justify-content: space-around;
 }
 
-body {
-    text-align: center;
-    align-items: center;
+#foto {
+    width: 200px;
+    border-radius: 50%;
+    padding: 20px;
 }
 
 .nome {
     line-height: 20px;
-
 }
 
 #nome {
+    text-align: center;
     font-family: 'Prompt', sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
-    color: #B5838D;
 }
 
 #sobrenome {
+    text-align: center;
     font-family: 'Mr Dafoe', cursive;
     font-size: 2rem;
-    color: #6D6875;
 }
 
-#foto {
-    border-radius: 50%;
-    width: 40vw;
-    padding: 10px;
-    
-}
-
-.decor {
-    width: 70px;
-}
-
-main {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.conteudo {
-    width: 70%;
-    height: 350px;
-    padding: 10px 5px;
-    background-color: #FFCDB2;
-    border-radius: 15px;
-    margin: 10px;
-}
-
-.titulo {
-    color: #6D6875;
-    padding: 5px 10px 10px;
-}
-
-.nick {
-    font-size: 1.1rem;
-    font-weight: bolder;
-    padding: 10px;
-    color: #B5838D;
-}
-
-.nick:hover {
-    text-decoration: underline;
-    color: #6D6875;
-}
-
-.imgs {
-    width: 20%;
-
-}
-
-section {
-    align-items: center;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.texto {
-    color: #303030;
-    padding: 8px;
-    
-}
-
-footer {
-    background-color: #6D6875;
+#profi {
+    font-family: 'Prompt', sans-serif;
     text-align: center;
-    color: white;
-    padding: 3px;
+    background-color: #585191;
+    border-radius: 20px;
+    width: 135px;
 }
-
-footer > a {
-    color: white;
-    text-decoration: none;
-}
-
-footer > a:hover {
-    text-decoration: underline;
-}
-
-
-/* .logo {
-    width: 30px;
-    float: left;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-} */
-
-
