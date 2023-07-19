@@ -1,2 +1,145 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oxanium', cursive;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-y: hidden;
+}
+
+body::before {
+    content: "";background-image: url(../imagens/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    opacity: 0.15;
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.selecao {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 153px);
+    justify-content: center;
+    
+}
+
+.lista-perso {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+}
+
+.personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+
+
+.titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #47f4ff;
+    width: 100%;
+    text-align: center;
+}
+
+.personagens > img {
+    width: 100%;
+    height: 100%;
+}
+
+.personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #0271f7;
+}
+
+.personagens-selecionados {
+    text-align: center;
+    max-height: 530px;
+
+}
+
+.personagem-grande {
+    width: 430px;
+    height: 430px;
+}
+
+.nome-perso {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #47f4ff;
+}
+
+.descricao {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 429px;
+}
+
+@media (max-width: 1120px) {
+
+    body {
+        overflow-y: visible;
+    }
+    .logo {
+        max-width: 190px;
+    }
+
+    .selecao {
+        flex-direction: column-reverse;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .personagens {
+        margin-top: 37px;
+    }
+
+    .titulo {
+        font-size: 15px;
+    }
+
+    .lista-perso {
+        gap: 9px;
+    }
+
+    .personagem-grande{
+        width: 350px;
+        height: 350px;
+    }
+
+    .personagem > img {
+       width: 80px;
+    }
+
+    .descricao {
+        width: 80%;
+        font-size: 16px;
+        margin: 20px auto;
+    }
+}

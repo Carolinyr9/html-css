@@ -1,14 +1,71 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Poppins:wght@400&display=swap');
+
+:root {
+    --color1: #ffffff;
+    --color2: #b040ff;
+    --color3: #343434;
+    --color4: #1c1c1c;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-header {
+header, .header {
+    display: flex;
+    flex-direction: row;
     background-color: #AAAAAA;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
+    
+
+}
+
+.logo-header {
+    width: 45px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    background-color: #3C3C3C;
+    padding: 5px;
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header > li {
+    list-style: none;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    color: #BABABA;
+    font-weight: 400;
+
+}
+
+.nav:hover {
+    color: white;
+    font-size: 20px;
+    transition: 0.9s;
+}
+
+.apresentacao {
+    background-image: url(../imagens/header-fundo.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
 .foto {
@@ -17,12 +74,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 20px;
 }
 
 #foto {
     width: 200px;
     border-radius: 50%;
-    padding: 20px;
+    border: 7px solid #585191;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.359);
 }
 
 .nome {
@@ -34,18 +93,274 @@ header {
     font-family: 'Prompt', sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
+    color: #171614;
+
 }
 
 #sobrenome {
     text-align: center;
     font-family: 'Mr Dafoe', cursive;
     font-size: 2rem;
+    color: #BABABA;
 }
 
 #profi {
     font-family: 'Prompt', sans-serif;
     text-align: center;
-    background-color: #585191;
+    color: #BABABA;
+    width: 100%;
+    padding: 10px;
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+section {
+    padding: 50px;
+}
+
+h1 {
+    color: #3C2878;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+}
+
+#intro {
+    line-height: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.descricao {
+    margin-top: 10px;
+}
+
+.linguagens-img {
+    width: 70px;
+    padding-top: 10px;
+}
+
+.linguagens {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.linguagens > li {
+    list-style: none;
+}
+
+.linguagens > li > p:hover {
+    color: #3C2878;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+.projetos {
+    background-color: #3C2878;
     border-radius: 20px;
-    width: 135px;
+    padding: 3px;
+    margin: 10px;
+    color: #cecdcd;
+    text-transform: uppercase;
+}
+
+.projetos:hover {
+    color: #3C3C3C;
+    background-color: #cecdcd;
+    transition: 2s;
+}
+
+.mais-sobre {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.mais-sobre > ul > li {
+    list-style: none;
+}
+
+#mais {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+
+.mais-img {
+
+    width: 50px;
+    color: #3C2878;
+    padding: 10px;
+}
+
+footer {
+    background-color: #585191;
+    padding: 50px 0;
+    font-family: 'Poppins';
+
+}
+
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+    flex-wrap: nowrap;
+    display: block;
+    line-height: 10px;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+    flex-wrap: nowrap;
+    display: block;
+}
+
+.footer-col ul li a {
+    line-height: 15px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
+.footer-col .medias-socias {
+    margin-top: 30px;
+}
+
+.footer-col .medias-socias a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .medias-socias a i {
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover {
+    color: #585191;
+    background-color: white;
+}
+
+.footer-col .form-sub input {
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #585191;
+}
+
+.footer-col .form-sub input::placeholder {
+    color: white;
+}
+
+.footer-col .form-sub button {
+    width: 224px;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #3C2878;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+
+.img-f{
+    width: 20px;
+    filter: invert(100%);
 }
