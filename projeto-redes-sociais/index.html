@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/estilo1.css">
-    <link rel="stylesheet" href="style/estilo2.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/slider.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,18 +16,22 @@
 </head>
 <body>
     <header>
-        <div id="cabecalho">
-            <div class="logo-header">
-                <img src="" alt="Logo CR">
-            </div>
-            <ul class="header">
-                <li><a href="#eu" class="nav">Sobre</a></li>
-                <li><a href="#linguagens" class="nav">Linguagens</a></li>
-                <li><a href="#projetos" class="nav">Projetos</a></li>
-                <li><a href="#mais" class="nav">Mais</a></li>
-            </ul>
-        </div>
+        <nav>
+            <a href="#top" class="logo">Caroliny</a>
 
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#linguagens">Tecnologias</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#mais">Contatos e mais</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="apresentacao">
@@ -60,7 +65,8 @@
         </section>
 
         <section id="linguagens">
-            <h1>Linguagens e Bibliotecas</h1>
+            <h1>Tecnologias</h1>
+            <h2 id="intro">Habilidades</h2>
 
                 <p>
                 Tenho experiência com JavaScript, HTML, CSS e linguagem C, atualmente estou iniciando React e Typescript.
@@ -91,58 +97,101 @@
 
         <section id="projetos">
             <h1>Meus projetos</h1>
+            <h2 id="intro">criações</h2>
 
-            <div class="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item">
-                    <img src="imagens/projeto-reco.png" alt="Imagem 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagens/projeto-qr-code.png" alt="Imagem 2">
-                  </div>
+            <section class="slider">
+                <div class="slider-content">
+                    
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+        
+                    <div class="slide-box primeiro">
+                        <img class="img-desktop" src="imagens/projeto-qr-code.png" alt="slide 1">
+                    </div>
+        
+                    <div class="slide-box">
+                        <img class="img-desktop" src="imagens/projeto-reco.png" alt="slide 2">
+                    </div>
+        
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                    </div>
+        
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                    </div>
+        
                 </div>
+            </section>
+
+            <section class="projetos">
+                <a href="https://carolinyr9.github.io/html-css/qr-code/index.html" target="_blank">Projeto QR Code</a><br> <br>
+                <a href="https://carolinyr9.github.io/html-css/projeto-front-end/index.html" target="_blank">Projeto Recomendações</a> 
                 
-                <a class="carousel-control prev" href="#" role="button">Anterior</a>
-                <a class="carousel-control next" href="#" role="button">Próximo</a>
-              </div>
+            </section>
 
-            <p><a href="http://" target="_blank" rel="noopener noreferrer" class="projetos">Recomendações de Streaming</a></p> <br>
-
-            <p><a href="http://" target="_blank" rel="noopener noreferrer" class="projetos">QR Code</a></p> <br>
-
-
-        </section>
-
-        <h1>Mais...</h1>
+        <h1 id="contatos">Contatos</h1>
+        <h2 id="hab">e mais</h2>
         <section id="mais">
 
             <div class="mais-sobre">
-
-                <p>Para mais informações sobre mim você pode acessar as seguintes redes sociais:</p>
+                Para mais informações sobre mim você pode acessar as seguintes redes sociais:
 
                 <ul>
                     <li>
-                        <img src="imagens/instagram.png" alt="" class="mais-img">
+                        <a href="https://www.instagram.com/linyyrocha/" target="_blank"><img src="imagens/insta.png" alt="Instagram linyyrocha" class="mais-img"></a>
                     </li>
                     <li>
-                        <img src="imagens/linkedin.png" alt="" class="mais-img">
+                        <a href="https://www.linkedin.com/in/caroliny-rocha-sampaio-27284a237/" target="_blank"><img src="imagens/linkedin.png" alt="Linkedin Caroliny Rocha Sampaio" class="mais-img"></a>
                     </li>
                 
                 </ul>
 
-                <p>Tenha acesso ao meu currículo fazendo download do pdf abaixo:</p>
-
-                <a href="file:///C:/Users/carol/Downloads/Curr%C3%ADculo%20Caroliny%20Rocha%20(1).pdf" target="_blank" rel="noopener noreferrer">&#x1F517; Currículo</a>
-
                 <p>Veja todos os meus projetos a partir do meu github: </p>
 
-                <a href=""><img src="imagens/github.png" alt="" class="mais-img"></a>
+                <a href="https://github.com/Carolinyr9"><img src="imagens/gtihub.png" alt="GitHub Carolinyr9" class="mais-img"></a>
+
+                <p>Tenha acesso ao meu currículo fazendo download do pdf abaixo:</p>
+
+                <a href="file:///C:/Users/carol/Downloads/Curr%C3%ADculo%20Caroliny%20Rocha%20(1).pdf" target="_blank" id="curriculo"> <img src="imagens/curriculo.png" alt="magem Currículo" class="mais-img"></a>
+
             </div>
         </section>
 
     </main>
 
+    <footer>
 
+
+        <div id="nome-footer" class="nome">Caroliny</div>
+        <div><a href="#top" id="sobrenome-footer" class="nome">Rocha</a></div>
+
+        <div class="agradecimentos">
+            <p>Obrigado por acessar o meu site! É uma satisfação tê-lo(a) aqui. Espero que tenha encontrado informações úteis e que nossa plataforma tenha sido de ajuda. Sua visita é muito apreciada. Volte sempre!</p>
+        </div>
+
+        <section class="redes-sociais">
+
+            <a href="https://www.instagram.com/linyyrocha/" target="_blank" rel="noopener noreferrer"><img src="imagens/instagram.footer (2).png" alt="Instagram @linyyrocha" class="logo-footer"></a>
+
+            <a href="https://github.com/Carolinyr9" target="_blank" rel="noopener noreferrer"><img src="imagens/github.footer (2).png" alt="Github @carolinyr9" class="logo-footer"></a>
+
+            <a href="https://www.linkedin.com/in/caroliny-rocha-sampaio-27284a237/" target="_blank" rel="noopener noreferrer"><img src="imagens/linkedin.footer (2).png" alt="Linkedin Caroliny Rocha Sampaio" class="logo-footer"></a>
+
+            <a href="mailto:carolinyr9@gmail.com?subject=Oportunidade de Contratação - Convite para Entrevista&body=Prezada%20Caroliny%2C%0A%0AEspero%20que%20esta%20mensagem%20a%20encontre%20bem.%20Meu%20nome%20%C3%A9%20%5BSeu%20Nome%5D%2C%20sou%20o%20recrutador%20respons%C3%A1vel%20pela%20sele%C3%A7%C3%A3o%20de%20talentos%20na%20%5BNome%20da%20Empresa%5D.%20Gostaria%20de%20expressar%20o%20meu%20interesse%20em%20convid%C3%A1-lo(a)%20para%20uma%20entrevista%20para%20a%20vaga%20de%20%5BCargo%20Desejado%5D.%0A%0AGostar%C3%ADamos%20de%20convid%C3%A1-lo(a)%20para%20uma%20entrevista%20presencial%20em%20nosso%20escrit%C3%B3rio%2C%20ou%20caso%20prefira%2C%20uma%20entrevista%20virtual.%20Para%20agendarmos%20o%20melhor%20dia%20e%20hor%C3%A1rio%2C%20por%20favor%2C%20entre%20em%20contato%20comigo%20atrav%C3%A9s%20do%20e-mail%20%5BSeu%20E-mail%5D%20ou%20do%20telefone%20%5BSeu%20N%C3%BAmero%20de%20Contato%5D.%0A%0AAgradecemos%20desde%20j%C3%A1%20o%20seu%20interesse%20em%20fazer%20parte%20da%20nossa%20equipe%20na%20%5BNome%20da%20Empresa%5D.%20Esperamos%20ter%20a%20oportunidade%20de%20conversar%20pessoalmente%20e%20explorar%20como%20sua%20experi%C3%AAncia%20e%20habilidades%20podem%20complementar%20nosso%20ambiente%20de%20trabalho.%0A%0AAtenciosamente%2C%0A%0A%5BSeu%20Nome%5D%0ARecrutador%20na%20%5BNome%20da%20Empresa%5D%0A%5BSeu%20E-mail%5D%0A%5BSeu%20N%C3%BAmero%20de%20Contato%5D" target="_blank"><img src="imagens/gmail.footer.png" alt="Gmail carolinyr9@gmail.com" class="logo-footer"></a>
+
+        </section>
+
+        <hr>
+
+        <div id="creditos">
+            © 2023 copyright
+            <a class="text-white" href="#top">@linyyrocha</a>      
+    </div>
+
+    </footer>
 
     <script src="javascript/js.js"></script>
     

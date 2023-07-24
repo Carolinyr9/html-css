@@ -1,22 +1,65 @@
-window.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.querySelector('.carousel');
-    const carouselInner = carousel.querySelector('.carousel-inner');
-    const prevBtn = carousel.querySelector('.carousel-control.prev');
-    const nextBtn = carousel.querySelector('.carousel-control.next');
-    const carouselItems = carousel.querySelectorAll('.carousel-item');
-  
-    let currentIndex = 0;
-    const itemWidth = carouselItems[0].offsetWidth;
-  
-    prevBtn.addEventListener('click', function(event) {
-      event.preventDefault();
-      currentIndex = (currentIndex > 0) ? currentIndex - 1 : carouselItems.length - 1;
-      carouselInner.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+class MobileNavbar {
+  constructor(mobileMenu, navList, navLinks) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks);
+    this.activeClass = "active";
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  animateLinks() {
+    this.navLinks.forEach((link, index) => {
+      link.style.animation
+        ? (link.style.animation = "")
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`);
     });
-  
-    nextBtn.addEventListener('click', function(event) {
-      event.preventDefault();
-      currentIndex = (currentIndex < carouselItems.length - 1) ? currentIndex + 1 : 0;
-      carouselInner.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    });
-  });
+  }
+
+  handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
+
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+  }
+
+  init() {
+    if (this.mobileMenu) {
+      this.addClickEvent();
+    }
+    return this;
+  }
+}
+
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav-list",
+  ".nav-list li",
+);
+mobileNavbar.init();
+
+// slides
+
+var radio = document.querySelector('.manual-btn')
+var cont = 1
+
+document.getElementById('radio1').checked = true
+
+setInterval(() => {
+    proximaImg()
+}, 5000)
+
+function proximaImg(){
+    cont++
+
+    if(cont > 3){
+        cont = 1 
+    }
+
+    document.getElementById('radio'+cont).checked = true
+}
