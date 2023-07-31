@@ -47,6 +47,7 @@
 
 .nome {
     line-height: 20px;
+
 }
 
 #nome {
@@ -56,9 +57,11 @@
     font-size: 2rem;
     color: #171614;
 
+
 }
 
 #sobrenome {
+
     text-align: center;
     font-family: 'Mr Dafoe', cursive;
     font-size: 2rem;
@@ -123,6 +126,10 @@ h1 {
     text-decoration: underline;
 }
 
+.projetos {
+    margin-bottom: 40px;
+}
+
 .projetos > a {
     background-color: var(--color5);
     border-radius: 10px;
@@ -136,7 +143,7 @@ h1 {
 }
 
 #contatos {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #hab {
