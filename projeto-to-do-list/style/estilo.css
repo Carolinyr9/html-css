@@ -97,6 +97,14 @@ header {
     
 }
 
+.ativo {
+  color: var(--color10);
+}
+
+.active {
+  color: var(--color1);
+}
+
 #diasem > ul > li {
     list-style-type: none;
     margin: 0px 15px;
@@ -125,7 +133,7 @@ header {
     justify-content: space-around;
 }
 
-#clima > ul > li > svg {
+#clima > ul > li > .clima {
     width: 30px;
     height: 30px;
     color: var(--color10);
@@ -296,141 +304,154 @@ footer {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-  }
+}
   
-  @media (min-width: 700px) {
-    .hero {
-      padding: 3rem;
-    }
+@media (min-width: 700px) {
+  .hero {
+    padding: 3rem;
   }
+}
   
-  @media (min-width: 1200px) {
-    .hero {
-      padding: 6rem;
-    }
+@media (min-width: 1200px) {
+  .hero {
+    padding: 6rem;
   }
+}
   
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+  
+@media (min-width: 800px) {
   .hero-inner {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     gap: 2rem;
-    max-width: 900px;
-    margin: auto;
   }
+}
   
-  @media (min-width: 800px) {
-    .hero-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 2rem;
-    }
-  }
+.hero-inner p,
+.hero h2 {
+  color: #fff;
+}
   
-  .hero-inner p,
-  .hero h2 {
-    color: #fff;
-  }
+.hero-button {
+  background: #fff;
+  color: #000;
+  border: 0;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
   
+@media (min-width: 700px) {
   .hero-button {
-    background: #fff;
-    color: #000;
-    border: 0;
-    padding: 1rem 2rem;
-    display: inline-block;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
+}
   
-  @media (min-width: 700px) {
-    .hero-button {
-      margin-top: 2rem;
-    }
+.hero-image {
+  order: -1;
+  
+}
+  
+@media (min-width: 800px) {
+  .img-header1 {
+    width: 180px;
   }
-  
+
+  .img-header {
+    width: 150px;
+  }
+
+  #clima, #diasem {
+    max-width: 650px;
+    margin: auto;
+    align-items: center
+  }
+
   .hero-image {
-    order: -1;
-  
+    order: initial;
   }
-  
-  @media (min-width: 800px) {
-    .hero-image {
-      order: initial;
-    }
-  }
-  
+}
   .hero-image img {
-    width: 100%;
-  }
+  width: 100%;
+}
   
+.hero-form {
+  margin-top: 1rem;
+}
+  
+@media (min-width: 700px) {
   .hero-form {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
+}
   
-  @media (min-width: 700px) {
-    .hero-form {
-      margin-top: 2rem;
-    }
-  }
+.hero-form-input {
+  display: grid;
+  grid-template-columns: 1fr;
+}
   
+@media (min-width: 400px) {
   .hero-form-input {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
   }
+}
   
-  @media (min-width: 400px) {
-    .hero-form-input {
-      display: grid;
-      grid-template-columns: 1fr auto;
-    }
-  }
+.hero-email-input {
+  padding: 1rem;
+  box-sizing: border-box;
+}
   
-  .hero-email-input {
-    padding: 1rem;
-    box-sizing: border-box;
-  }
+.hero-form-submit {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+}
   
+@media (min-width: 400px) {
   .hero-form-submit {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 1rem 2rem;
-    margin-top: 0.5rem;
+    margin-top: 0;
   }
+}
   
-  @media (min-width: 400px) {
-    .hero-form-submit {
-      margin-top: 0;
-    }
-  }
+footer {
+    background-color: black;
+    font-family: 'Poppins';
+    padding: 85px 0 285px 0;
+}
   
-      footer {
-          background-color: black;
-          font-family: 'Poppins';
-          padding: 85px 0 285px 0;
-      }
+.footer-inner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    max-width: 1170px;
+    position: relative;
+}
   
-      .footer-inner {
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 120px;
-          max-width: 1170px;
-          position: relative;
-      }
+.footer-item {
+    float: left;
+    margin: 0 7.2% 0 0;
+}
   
-      .footer-item {
-          float: left;
-          margin: 0 7.2% 0 0;
-      }
+.footer-item:nth-of-type(4) {
+    display: none;
+}
   
-      .footer-item:nth-of-type(4) {
-          display: none;
-      }
-  
-      .footer-item:nth-of-type(7) {
-          float: right;
-          margin-right: 0;
-      }
+.footer-item:nth-of-type(7) {
+    float: right;
+    margin-right: 0;
+}
 
   
       footer h1 {
@@ -571,5 +592,4 @@ footer {
         padding: 1rem;
         margin:20;
       }
-  
   

@@ -49,7 +49,6 @@ function removeItem(data){
     values.splice(index, 1)
     localStorage.setItem(localStorageApp,JSON.stringify(values))
     showApp()
-
 }
 
 showApp()
