@@ -102,7 +102,7 @@ header {
 }
 
 .active {
-  color: var(--color1);
+  color: var(--color1) !important;
 }
 
 #diasem > ul > li {
@@ -593,3 +593,21 @@ footer {
         margin:20;
       }
   
+@media (max-width: 600px){
+  .img-header, #date{
+    display: none;
+  }
+
+  #input-new-app {
+    width: 50vw;
+  }
+
+  #list-app > li {
+    width: 50vw;
+  }
+
+  #text-notes {
+    height: 200px;
+  }
+}
+
