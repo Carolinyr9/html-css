@@ -22,7 +22,13 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
 .apresentacao {
+    padding-top: 70px;
     background-image: url(../imagens/header-fundo.jpg);
     background-size: cover;
     background-position: center center;
@@ -73,7 +79,7 @@
     text-transform: lowercase;
     text-align: center;
     color: var(--color8);
-    width: 100%;
+
     padding: 10px;
 }
 

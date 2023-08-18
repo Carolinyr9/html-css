@@ -14,7 +14,118 @@
 
 }
 
-* {
+body {
+  overflow-x: hidden;
+
+}
+
+/*RELACIONADO AO HEADER - COMEÇO*/
+header {
+	position: fixed;
+  width: 100%;
+	background-color: var(--color7);
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	z-index: 2;
+}
+
+header img {
+	width: 30px;
+	height: 30px;
+}
+
+.logo {
+  color: var(--color1);
+  font-family: 'Prompt', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  color: var(--color2);
+}
+
+
+nav.navigation {
+	display: none;
+  font-family: 'Prompt', sans-serif;
+  text-transform: lowercase;
+}
+
+.navigation > a:hover {
+  color: var(--color2);
+}
+
+.toggleBox {
+	filter: invert(1)
+}
+
+nav.navigation.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	left: 50%;
+  font-family: 'Prompt', sans-serif;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: var(--color7);
+}
+
+nav.navigation.active a {
+	padding: 20px;
+	color: white;
+	font-size: 1.15rem;
+	font-weight: 500;
+	text-decoration: none;
+  font-family: 'Prompt', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navigation.active > a:hover {
+  color: var(--color2);
+}
+
+
+/*RELACIONADO AO HEADER - FIM*/
+
+
+@media (min-width: 768px) {
+
+	main{
+		margin-right: 15%;
+		margin-left: 15%;
+	}
+
+	nav.navigation {
+		display: flex;
+		align-items: center;
+	}
+
+	nav.navigation a {
+		font-size: 1.1rem;
+		margin-right: 40px;
+		padding: 6px;
+
+		font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+	}
+
+  #toggleBtn {
+    display: none;
+  }
+
+}
+/** {
     margin: 0;
     padding: 0;
 
@@ -131,3 +242,4 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+  */
