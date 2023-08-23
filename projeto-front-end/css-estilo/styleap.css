@@ -286,7 +286,14 @@ footer{
 
     }
 
+}
 
+@media (min-width: 800px){
+    .footer-col .form-sub button{
+        width: 25.5vw;
+    }
 
-
+    .footer-col .form-sub input{
+        width: 24vw;
+    }   
 }

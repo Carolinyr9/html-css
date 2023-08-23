@@ -29,6 +29,10 @@ h1{
       text-transform: uppercase;
       font-weight: 100;
 }
+
+#disney, #star, #hbo {
+    padding-top: 190px;
+}
     
 nav {
     font-family: 'Poppins';
@@ -78,7 +82,6 @@ nav > a{
 body {
     background-color: #141414;
     color: whitesmoke;
-    transition: background 0.2s linear;
 
 }
 
@@ -165,7 +168,7 @@ div.filmes {
 }
 
 .ani {
-    padding: 20px;
+    padding: 20px 20px 0px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -458,6 +461,14 @@ footer{
         flex-wrap: wrap;
     }
 
+}
 
+@media (min-width: 800px){
+    .footer-col .form-sub button{
+        width: 25.5vw;
+    }
 
+    .footer-col .form-sub input{
+        width: 24vw;
+    }   
 }

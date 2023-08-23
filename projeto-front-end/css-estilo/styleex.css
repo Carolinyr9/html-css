@@ -45,11 +45,12 @@ nav > a{
     text-align: center;
     margin: auto;
     color: #ffff;
-    font-size: 3em;
+    font-size: 2rem;
     line-height: 10px;
     text-transform: uppercase;
     font-family: 'Poppins';
     font-weight: 500;
+    max-width: 90%;
     font-style: italic;
 }
 
@@ -106,6 +107,8 @@ h1 {
     font-weight: 500;
     font-style: italic;
     text-align: center;
+    margin: auto;
+    padding-top: 50px;
 }
 
 .form-wrapper {
@@ -114,7 +117,7 @@ h1 {
 }
 
 form.principal {
-    width: 150px;
+    width: 250px;
     overflow: hidden;
     font-family: 'Poppins';
     margin: 20px 0;
@@ -221,6 +224,8 @@ footer {
     background-color: #AC070F;
     padding: 50px 0;
     font-family: 'Poppins';
+    margin-top: 80px;
+
 
 }
 
@@ -342,7 +347,7 @@ footer {
     filter: invert(100%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 748px) {
     .footer-col .form-sub button{
         width: 200px;
     }
@@ -357,13 +362,14 @@ footer {
     }
 
     .titulo {
-        font-size: 2.3rem;
+        font-size: 3rem;
     }
+
 
     h1{
-        font-size: 2rem;
+        font-size: 1.75rem;
+        max-width: 90%;
     }
-
 
 }
 
@@ -380,6 +386,9 @@ footer {
 }
 
 @media (min-width: 748px) {
+    body {
+        overflow-x: hidden;
+    }
     
     .back {
         background-image: linear-gradient(to bottom, black, #141414);
@@ -394,8 +403,29 @@ footer {
 
     }
 
-    
+
     form.principal {
-        width: 250px;
+        width: 400px;
+        height: 400px;
+    }
+
+    #ideia {
+        height: 100px;
+    }
+}
+
+@media (min-width: 800px){
+    .footer-col .form-sub button{
+        width: 25.5vw;
+    }
+
+    .footer-col .form-sub input{
+        width: 24vw;
+    }   
+}
+
+@media (min-height: 1368px){
+    form.principal {
+        margin-top: 80px;
     }
 }

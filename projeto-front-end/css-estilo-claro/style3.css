@@ -107,6 +107,9 @@ h1 {
     font-weight: 500;
     font-style: italic;
     text-align: center;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 50px;
 }
 
 .form-wrapper {
@@ -222,6 +225,7 @@ footer {
     background-color: #AC070F;
     padding: 50px 0;
     font-family: 'Poppins';
+    margin-top: 80px;
 
 }
 
@@ -343,7 +347,7 @@ footer {
     filter: invert(100%);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 748px) {
     .footer-col .form-sub button{
         width: 200px;
     }
@@ -358,11 +362,13 @@ footer {
     }
 
     .titulo {
-        font-size: 2.3rem;
+        font-size: 3rem;
     }
 
+
     h1{
-        font-size: 2rem;
+        font-size: 1.75rem;
+        max-width: 90%;
     }
 
 }
@@ -380,6 +386,9 @@ footer {
 }
 
 @media (min-width: 748px) {
+    body {
+        overflow-x: hidden;
+    }
     
     .back {
         background-image: linear-gradient(to bottom, black, #141414);
@@ -394,4 +403,29 @@ footer {
 
     }
 
+
+    form.principal {
+        width: 400px;
+        height: 400px;
+    }
+
+    #ideia {
+        height: 100px;
+    }
+}
+
+@media (min-width: 800px){
+    .footer-col .form-sub button{
+        width: 25.5vw;
+    }
+
+    .footer-col .form-sub input{
+        width: 24vw;
+    }   
+}
+
+@media (min-height: 1368px){
+    form.principal {
+        margin-top: 80px;
+    }
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/estilo1.css">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/cards.css">
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,45 +91,50 @@
                 </ul>
         </section>
 
-        <section id="projetos">
+        <div id="projtos">
             <h1>Meus projetos</h1>
-            <h2 id="intro">criações</h2>
-            <!--
-            <section class="slider">
-                <div class="slider-content">
-                    
-                    <input type="radio" name="btn-radio" id="radio1">
-                    <input type="radio" name="btn-radio" id="radio2">
-        
-                    <div class="slide-box primeiro">
-                        <img class="img-desktop" src="imagens/projeto-qr-code.png" alt="slide 1">
-                    </div>
-        
-                    <div class="slide-box">
-                        <img class="img-desktop" src="imagens/projeto-reco.png" alt="slide 2">
-                    </div>
-        
-                    <div class="nav-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                    </div>
-        
-                    <div class="nav-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                    </div>
-        
-                </div>
-            
-            </section>
-            -->
+            <h2 id="intro" class="projetos">criações</h2>
 
-            <section class="projetos">
-                <a href="https://carolinyr9.github.io/html-css/projeto-to-do-list/index.html" target="_blank">To Do List</a>
-                <a href="https://carolinyr9.github.io/html-css/qr-code/index.html" target="_blank">QR Code</a><br> <br>
-                <a href="https://carolinyr9.github.io/html-css/projeto-front-end/index.html" target="_blank">Recomendações Streaming</a> 
+                <div id="container-project">
                 
-            </section>
+                <div class="my-project">
+                    <img src="imagens/to-do-list.png" alt="" class="img-project">
+                    <h1>To do List</h1>
+                    <p>Planner diário que visa otimizar o seu tempo, organizando de forma sucinta as suas tarefas.</p>
+                    <a href="https://github.com/Carolinyr9/html-css/tree/main/projeto-to-do-list" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                        <a href="https://carolinyr9.github.io/html-css/projeto-to-do-list/index.html">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z"/></svg>
+                        </a>
+                    </div>
+                    
+                    <div class="my-project">
+                        <img src="imagens/projeto-reco.png" alt="" class="img-project">
+                        <h1>Streaming</h1>
+                        <p>Página de recomendações conteúdo em várias plataformas de streaming.</p>
+                        <a href="https://github.com/Carolinyr9/html-css/tree/main/projeto-front-end" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                            <a href="https://carolinyr9.github.io/html-css/projeto-front-end/index.html">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z"/></svg>
+                            </a>
+                        </div>
+                
+                    <div class="my-project">
+                        <img src="imagens/projeto-qr-code.png" alt="" class="img-project">
+                        <h1>QR Code</h1>
+                        <p>Código QR Code para página portifólio</p>
+                        <a href="https://github.com/Carolinyr9/html-css/tree/main/qr-code" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                            <a href="https://carolinyr9.github.io/html-css/qr-code/index.html">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z"/></svg>
+                            </a>
+                        </div>
+
+                        <p class="more-projects">Mais projetos em andamento...</p>
+                        
+                    </div>
+                </div>
+
 
         <h1 id="contatos">Contatos</h1>
         <h2 id="hab">e mais</h2>

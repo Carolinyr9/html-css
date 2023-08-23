@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Poppins:wght@400&display=swap');
+
+:root {
+    --color1: #ffffff;
+    --color2: #8850BD;
+    --color3: #343434;
+    --color4: #1c1c1c;
+    --color5: #3C2878;
+    --color6: #585191;
+    --color7: #3C3C3C;
+    --color8: #BABABA;
+    --color9: #565656;
+    --color0: #a161de;
+  
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Começo Cards dos projetos */
+
+
+
+.img-project {
+    width: 300px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#container-project{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+div.my-project {
+    background-color: var(--color9);
+    color: var(--color1);
+    height: 375px;
+    width: 300px;
+    border: 1px solid var(--color9);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.304);
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 5px;
+
+    
+}
+
+div.my-project > a {
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: var(--color4);
+    border: none;
+    background-color: var(--color1);
+    padding: .05rem .06rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+    margin: 10px;
+}
+
+div.my-project > a:hover { 
+    background-color: var(--color3);
+}
+
+div.my-project > h1{
+    color: var(--color0);
+    transition: .4s;
+}
+
+div.my-project > h1:hover {
+    color: var(--color3);
+}
+
+
+div.my-project > p {
+    width: 85%;
+    margin: auto;
+}
+
+.more-projects {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    text-transform: lowercase;
+    color: var(--color3);
+}
+
+/* Fim Cards dos Projetos*/
+
+@media (max-width: 800px){
+    body {
+        overflow-x: hidden;
+    }
+
+    #projtos {
+        padding: 0 !important;
+        width: 100%;
+        margin: 0px auto !important;
+        box-sizing: border-box !important;
+    }
+
+    .my-project {
+        flex-wrap: nowrap;
+        display: inline;
+        margin: auto;
+        padding: auto;
+        box-sizing: border-box !important;
+    }
+}
